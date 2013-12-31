@@ -83,7 +83,7 @@ theme.titlebar_maximized_button_focus_inactive  = "/usr/share/awesome/themes/def
 theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "background.jpg"
+theme.wallpaper = os.getenv("HOME") .. "/.config/awesome/themes/aish/background.jpg"
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairhw.png"
 theme.layout_fairv = "/usr/share/awesome/themes/default/layouts/fairvw.png"
 theme.layout_floating  = "/usr/share/awesome/themes/default/layouts/floatingw.png"

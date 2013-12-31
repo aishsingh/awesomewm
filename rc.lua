@@ -46,7 +46,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init(awful.util.getdir("config") .. "/themes/default/theme.lua.grey")
+beautiful.init(awful.util.getdir("config") .. "/themes/aish/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
