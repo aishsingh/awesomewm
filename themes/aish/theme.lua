@@ -4,12 +4,16 @@
 
 theme = {}
 
-theme.font          = "sans 8"
+orange = "#D81860"--"#ad504b"
+darko = "#292929"--"#302627"
+lighto = "#907779"--"#C28334"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#777777"--"#6a9fb5"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#222222"
+theme.font          = "liberation mono 8"
+
+theme.bg_normal     = darko--"#444444"
+theme.bg_focus      = darko--"#444444"--"#6a9fb5"
+theme.bg_urgent     = darko--"#ff0000"
+theme.bg_minimize   = darko--"#444444"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#94928F"
@@ -17,9 +21,9 @@ theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.border_width  = 1
-theme.border_normal = "#444444"
-theme.border_focus  = "#777777" --"#b3b3b3" --"#555753"
+theme.border_width  = 0
+theme.border_normal = darko--"#444444"
+theme.border_focus  = "666666"--"#D81860"--"#666666" --"#b3b3b3" --"#555753"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
@@ -29,14 +33,14 @@ theme.border_marked = "#91231c"
 -- titlebar_[bg|fg]_[normal|focus]
 -- tooltip_[font|opacity|fg_color|bg_color|border_width|border_color]
 -- mouse_finder_[color|timeout|animate_timeout|radius|factor]
--- Example:}
-theme.taglist_bg_focus = "#222222"
-theme.taglist_fg_focus = "#6a9fb5"
+-- Example:}function () awful.util.spawn(terminal) end
+theme.taglist_bg_focus = darko--"#444444"
+theme.taglist_fg_focus = orange --"#6a9fb5" "99bdcc"
 
-theme.tasklist_bg_focus = "#444444"
+theme.tasklist_bg_focus = darko--"#444444"
 --theme.tasklist_bg_urgent = "#222222"
 
-theme.tooltip_border_color = "#444444"
+theme.tooltip_border_color = darko--"#444444"
 
 -- Display the taglist squares
 theme.taglist_squares_sel   = "/usr/share/awesome/themes/default/taglist/squarefw.png"
@@ -53,7 +57,7 @@ theme.menu_width  = 100
 -- You can add as many variables as
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
-theme.bg_widget = "#444444"--"6a9fb5"--"#cc0000"
+theme.bg_widget = darko--"#444444"--"6a9fb5"--"#cc0000"
 
 -- Define the image to load
 theme.titlebar_close_button_normal = "/usr/share/awesome/themes/default/titlebar/close_normal.png"
@@ -79,9 +83,7 @@ theme.titlebar_maximized_button_focus_inactive  = "/usr/share/awesome/themes/def
 theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "~/Downloads/Wallpapers/lines.png"
-
--- You can use your own layout icons like this:
+theme.wallpaper = "background.jpg"
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairhw.png"
 theme.layout_fairv = "/usr/share/awesome/themes/default/layouts/fairvw.png"
 theme.layout_floating  = "/usr/share/awesome/themes/default/layouts/floatingw.png"
@@ -99,7 +101,7 @@ theme.awesome_icon = "~/Downloads/archlogo/blue.png" -- "/usr/share/awesome/icon
 
 -- Define the icon theme for application icons. If not set then the icons 
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
-theme.icon_theme = nil
+theme.icon_theme = "Faenza"
 
 return theme
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
