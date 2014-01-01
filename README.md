@@ -1,5 +1,6 @@
 AwesomeWM configuration
 =======================
+My current awesomewm setup
 
 Requirments
 -----------
