@@ -10,4 +10,4 @@ Requirments
 
 Screenshot
 ----------
-![alt tag](https://raw.github.com/aishsingh/awesomewm/master/screenshot.png)
+![alt tag](screenshot.png)
